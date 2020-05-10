@@ -1,0 +1,14 @@
+2020-05-10T23:36:48.566+0200 INFO Starting JasperlogApplication on DESKTOP-EGQK14Q with PID 7392 (C:\Users\Fahmy\Desktop\Palmyra\logreports\jasperlog\target\classes started by Fahmy in C:\Users\Fahmy\Desktop\Palmyra\logreports\jasperlog)
+2020-05-10T23:36:48.567+0200 DEBUG Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-10T23:36:48.568+0200 INFO No active profile set, falling back to default profiles: default
+2020-05-10T23:36:55.402+0200 INFO Started JasperlogApplication in 7.511 seconds (JVM running for 8.418)
+2020-05-10T23:36:55.533+0200 INFO Application Started Successfully !
+2020-05-10T23:37:36.213+0200 TRACE /companies enpoint is triggered !
+2020-05-10T23:37:46.842+0200 TRACE /companies enpoint is triggered !
+2020-05-10T23:37:55.819+0200 TRACE /report/{companyId} enpoint is triggered !
+2020-05-10T23:37:59.779+0200 TRACE Report Generated Successfully !
+2020-05-10T23:38:09.911+0200 TRACE /report/{companyId} enpoint is triggered !
+2020-05-10T23:38:10.557+0200 TRACE Report Generated Successfully !
+2020-05-10T23:38:21.188+0200 TRACE /report/{companyId} enpoint is triggered !
+2020-05-10T23:38:21.491+0200 DEBUG Unable to find com.chaabane.jasperlog.Company with id 66
+2020-05-10T23:38:51.593+0200 TRACE /companies enpoint is triggered !

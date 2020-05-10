@@ -1,26 +1,26 @@
 package com.chaabane.jasperlog;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 public class Company {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     long companyId;
     String companyName;
     String companyAddress;
     String companyDescription;
-    @OneToMany(mappedBy = "employeeCompany")
-    Set<Employee> companyEmployees;
+    @OneToMany(mappedBy = "employeeCompany", cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+    Set<Employee> companyEmployees = new HashSet<Employee>();
 
     public Company() {
     }
 
-    public Company(long companyId, String companyName, String companyAddress, String companyDescription) {
-        this.companyId = companyId;
+    public Company(String companyName, String companyAddress, String companyDescription) {
         this.companyName = companyName;
         this.companyAddress = companyAddress;
         this.companyDescription = companyDescription;

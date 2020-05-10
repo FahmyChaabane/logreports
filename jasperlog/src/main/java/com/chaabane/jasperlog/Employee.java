@@ -1,5 +1,8 @@
 package com.chaabane.jasperlog;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
 @Entity
@@ -14,13 +17,13 @@ public class Employee {
     String employeeGrad;
     @ManyToOne
     @JoinColumn(name = "CODE_ENTREPRISE")
+    @JsonIgnore
     Company employeeCompany;
 
     public Employee() {
     }
 
-    public Employee(Long employeeId, String employeeName, String employeeAddress, long employeeSalary, String employeeGrad) {
-        this.employeeId = employeeId;
+    public Employee(String employeeName, String employeeAddress, long employeeSalary, String employeeGrad) {
         this.employeeName = employeeName;
         this.employeeAddress = employeeAddress;
         this.employeeSalary = employeeSalary;
